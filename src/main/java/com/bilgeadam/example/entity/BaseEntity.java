@@ -1,6 +1,7 @@
 package com.bilgeadam.example.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @MappedSuperclass
 public abstract class BaseEntity {
@@ -12,7 +13,7 @@ public abstract class BaseEntity {
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_date")
-    private String createdDate;
+    private Date createdDate;
 
     @Column(name = "createdby")
     private String createdBy;
@@ -25,11 +26,11 @@ public abstract class BaseEntity {
         this.id = id;
     }
 
-    public String getCreatedDate() {
+    public Date getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(String createdDate) {
+    public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
     }
 
