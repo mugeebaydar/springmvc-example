@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <spring.version>5.1.7.RELEASE</spring.version>
+        <spring.version>5.2.3.RELEASE</spring.version>
         <javax.servlet.version>4.0.1</javax.servlet.version>
         <jsp.version>2.3.3</jsp.version>
 
